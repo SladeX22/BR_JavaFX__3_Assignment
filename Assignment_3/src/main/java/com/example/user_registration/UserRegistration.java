@@ -1,4 +1,4 @@
-package com.example.assignment_3;
+package com.example.user_registration;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Main extends Application
+public class UserRegistration extends Application
 {
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("mainController.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(com.example.user_registration.UserRegistration.class.getResource("mainController.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);

@@ -7,11 +7,16 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment_3.MainController">
-   <Label fx:id="name_lbl" layoutX="220.0" layoutY="40.0" prefHeight="68.0" prefWidth="149.0" />
-   <TextField fx:id="name_txf" layoutX="226.0" layoutY="131.0" promptText="Enter your name">
+   <Label fx:id="title_lbl" alignment="CENTER" layoutX="225.0" layoutY="73.0" prefHeight="68.0" prefWidth="149.0" text="ENTER YOUR TEXT" textFill="#860b0b" textOverrun="CLIP">
+      <font>
+         <Font size="17.0" />
+      </font></Label>
+   <TextField fx:id="text_txf" layoutX="225.0" layoutY="188.0" promptText="Enter text here">
       <font>
          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
       </font>
    </TextField>
-   <Button fx:id="submit_btn" layoutX="231.0" layoutY="246.0" mnemonicParsing="false" onAction="#submit_name" prefHeight="86.0" prefWidth="143.0" text="SUBMIT" />
+   <Button fx:id="count_btn" layoutX="184.0" layoutY="256.0" mnemonicParsing="false" onAction="#countChars" prefHeight="7.0" prefWidth="83.0" text="COUNT" />
+   <Button fx:id="clear_btn" layoutX="334.0" layoutY="256.0" mnemonicParsing="false" onAction="#clearChars" prefHeight="7.0" prefWidth="83.0" text="CLEAR" />
+   <Label fx:id="char_lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="330.0" prefHeight="17.0" prefWidth="137.0" text="Character Count: " textAlignment="CENTER" />
 </AnchorPane>

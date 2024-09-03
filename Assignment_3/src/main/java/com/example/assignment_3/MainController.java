@@ -8,17 +8,31 @@ import javafx.scene.control.TextField;
 public class MainController
 {
     @FXML
-    Label name_lbl;
+    Label title_lbl;
 
     @FXML
-    TextField name_txf;
+    Label char_lbl;
 
     @FXML
-    Button submit_btn;
+    TextField text_txf;
 
     @FXML
-    void submit_name()
+    Button count_btn;
+
+    @FXML
+    Button clear_btn;
+
+    @FXML
+    void clearChars()
     {
+        text_txf.clear();
+        char_lbl.setText("Character count: ");
+    }
 
+    @FXML
+    void countChars()
+    {
+        int charCount = text_txf.getLength();
+        char_lbl.setText("Character count: " + charCount);
     }
 }
